@@ -1,0 +1,14 @@
+version: '3.8'
+
+# konsi konsi services use krnin hai
+services:
+  postgres:
+    image: postgres # will get the latest postgres image from docker hub
+    ports:
+      - "5432:5432" # map host port 5432 to container port 5432
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_DB: mydb
+      POSTGRES_PASSWORD: mypassword
+
+    
